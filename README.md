@@ -1,23 +1,14 @@
+# 说明
+这个是基于depthmap2mask做的一部分改进, 因为[Midas](https://github.com/isl-org/MiDaS/releases)一直在更新, 但是原始项目并没有更新过, 所以我基于最新的midas代码, 做了点更改.
+
 # depthmap2mask
 
 Made as a script for the [AUTOMATIC1111/stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui) repository.
 
 
 ## 💥 Installation 💥
-
-Copy the url of that repository into the extension tab :
-
+在webui里添加本git连接并安装, 形如下图: (图中是原始的项目链接地址, 要改用本项目的git链接!)
 ![image](https://user-images.githubusercontent.com/15731540/204056273-fc27d1cf-48ac-4dc3-b737-95b4b1efd32e.png)
-
-OR copy that repository in your extension folder :
-
-![image](https://user-images.githubusercontent.com/15731540/203840272-83cccb24-4417-44bc-99df-e45eb5f3360c.png)
-
-You might need to restart the whole UI. Maybe twice.
-
-if you are on colab you can also add this line in a code block before starting the UI/after the installation cells :
-
-    !git clone https://github.com/Extraltodeus/depthmap2mask.git /content/stable-diffusion-webui/extensions/depthmap2mask
 
 ## The look
 
