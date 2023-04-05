@@ -1,15 +1,19 @@
 # 说明
-这个是基于depthmap2mask做的一部分改进, 因为[Midas](https://github.com/isl-org/MiDaS/releases)一直在更新, 但是原始项目并没有更新过, 所以我基于最新的midas代码, 做了点更改.
+这个是基于[depthmap2mas](https://github.com/Extraltodeus/depthmap2mask)k做的一部分改进, 因为[Midas](https://github.com/isl-org/MiDaS/releases)一直在更新, 但是原始项目并没有更新过, 所以我基于最新的midas代码, 做了点更改.
 
-# depthmap2mask
-
-Made as a script for the [AUTOMATIC1111/stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui) repository.
-
-
-## 💥 Installation 💥
-在webui里添加本git连接并安装, 形如下图: (图中是原始的项目链接地址, 要改用本项目的git链接!)
+## 安装
+1. 在webui里添加本git连接并安装, 形如下图: (图中是原始的项目链接地址, 要改用本项目的git链接!)
 ![image](https://user-images.githubusercontent.com/15731540/204056273-fc27d1cf-48ac-4dc3-b737-95b4b1efd32e.png)
 
+2. 将[Midas](https://github.com/isl-org/MiDaS/)项目放在目录`stable-diffusion-webui\repositories\`
+
+默认情况下, 如果找不到midas的模型, 它会自动下载到`stable-diffusion-webui\models\midas`目录里, 如果网络不稳定, 也可以手动下载它, 终端里会输出它下载的地址.
+
+## 使用
+在img2img栏目里, scripts里选择`Depth aware img2img mask`, 然后img2img里放入图片, 选择model, 设置`contrasts cut level`, 80到190范围内比较好突出人物, 点击生成即可看到深度图,
+
+
+以下内容来自原始项目
 ## The look
 
 ![image](https://user-images.githubusercontent.com/15731540/204043153-09cbffd9-28ac-46be-ad99-fc7f2c8656a3.png)
@@ -109,15 +113,3 @@ This repository runs with [MiDaS](https://github.com/isl-org/MiDaS).
 	year      = {2021},
 }
 ```
-
-## Bug reporting
-
-- Please check if similar issues exist before creating a new one.
-- Make sure to do a "git pull" from your webui folder in order to have your webui up to date
-- Provide as many details as possible when creating a new issue.
-
-## Examples using different MiDaS models and denoising strength
-![00056-589874964- sampler -32-7-ac07d41f-20221125174017](https://user-images.githubusercontent.com/15731540/204048931-20b19823-bba9-44be-a4ff-4d3ae65dd120.png)![00064-1584461722- sampler -32-7-ac07d41f-20221125174328](https://user-images.githubusercontent.com/15731540/204048940-fada95f2-fcb0-4cf7-ba0c-6a1fd6b904ea.png)![00100-717650490- sampler -84-8 1-ac07d41f-20221125175700](https://user-images.githubusercontent.com/15731540/204048949-a4faf745-e9b5-437e-870d-be8ea7bd4b5d.png)
-
-
-<sub>I forgot my settings but in the end it's all pretty easy to guess what you need.</sub>
