@@ -58,7 +58,7 @@ class Script(scripts.Script):
             override_mask_blur = gr.Checkbox(label='Override mask blur to 0', value=True)
             override_fill = gr.Checkbox(label='Override inpaint to original', value=True)
             clean_cut     = gr.Checkbox(label='Turn the depthmap into absolute black/white', value=False)
-        model_type = gr.Dropdown(label="Model", choices=models, value=models[-2], type="index", elem_id="model_type")
+        model_type = gr.Dropdown(label="Model", choices=models, value="dpt_swin2_base_384", type="index", elem_id="model_type")
         # model_type = gr.Dropdown(label="Model", choices=['dpt_large','dpt_hybrid','midas_v21','midas_v21_small'], value='dpt_large', type="index", elem_id="model_type")
         return    [save_depthmap,treshold,match_size,net_width,net_height,invert_depth,model_type,override_mask_blur,override_fill,clean_cut, save_alpha_crop]
 
@@ -88,7 +88,7 @@ class Script(scripts.Script):
             img.putdata(newData)
             return img
 
-        sdmg = module_from_file("depthmap_for_depth2img",'extensions/depthmap2mask/scripts/depthmap_for_depth2img.py')
+        sdmg = module_from_file("depthmap_for_depth2img",'extensions/depthmap2mask-update/scripts/depthmap_for_depth2img.py')
         sdmg = sdmg.SimpleDepthMapGenerator() #import midas
 
         img_x = p.width  if match_size else net_width
