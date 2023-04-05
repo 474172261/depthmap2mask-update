@@ -5,7 +5,7 @@
 1. 在webui里添加本git连接并安装, 形如下图: (图中是原始的项目链接地址, 要改用本项目的git链接!)
 ![image](https://user-images.githubusercontent.com/15731540/204056273-fc27d1cf-48ac-4dc3-b737-95b4b1efd32e.png)
 
-2. 将[Midas](https://github.com/isl-org/MiDaS/)项目放在目录`stable-diffusion-webui\repositories\`
+2. 默认会安装[Midas](https://github.com/isl-org/MiDaS/) v3.1
 
 默认情况下, 如果找不到midas的模型, 它会自动下载到`stable-diffusion-webui\models\midas`目录里, 如果网络不稳定, 也可以手动下载它, 终端里会输出它下载的地址.
 
