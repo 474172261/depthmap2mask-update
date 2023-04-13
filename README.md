@@ -1,5 +1,7 @@
 # 说明
-这个是基于[depthmap2mas](https://github.com/Extraltodeus/depthmap2mask)k做的一部分改进, 因为[Midas](https://github.com/isl-org/MiDaS/releases)一直在更新, 但是原始项目并没有更新过, 所以我基于最新的midas代码, 做了点更改.
+这个是基于[depthmap2mask](https://github.com/Extraltodeus/depthmap2mask)k做的一部分改进, 因为[Midas](https://github.com/isl-org/MiDaS/releases)一直在更新, 但是原始项目并没有更新过, 所以我基于最新的midas代码, 做了点更改.
+
+我已经将项目代码同步到原始项目了，你也可以直接安装原始的项目，这个项目就当中文的文档优化存在就好了。
 
 ## 安装
 1. 在webui里添加本git连接并安装, 形如下图: (图中是原始的项目链接地址, 要改用本项目的git链接!)
